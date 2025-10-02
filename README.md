@@ -62,7 +62,7 @@ cd quasareum-token\miners\quasareum_python
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-python .\main.py 0xYourEthereumAddressHere
+python .\miner.py 0xYourEthereumAddressHere
 ```
 
 #### macOS / Linux
@@ -74,7 +74,7 @@ cd quasareum-token/miners/quasareum_python
 python3 -m venv .venv
 source .venv/bin/activate
 
-python3 main.py 0xYourEthereumAddressHere
+python3 miner.py 0xYourEthereumAddressHere
 ```
 
 **Output**
