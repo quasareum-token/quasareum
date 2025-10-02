@@ -1,22 +1,23 @@
 # QUASAREUM
 
-Quasareum is a project focused on accessible cryptocurrency mining.  
-Its unique hashing algorithm is specifically designed for high efficiency on low‑energy (LE) devices, allowing anyone to participate.  
-The token also features a fully on‑chain, built‑in market for decentralized trading.
+Quasareum is a project focused on accessible cryptocurrency mining. Its unique hashing algorithm is specifically designed for high efficiency on low-energy (LE) devices, allowing anyone to participate. The token also features a fully on-chain, built-in market for decentralized trading.
 
 ---
 
 ## Repository layout
 
 ```
-quasareum-token/
+quasareum-main/
 ├─ contracts/
 │  └─ quasareum_token.sol
 │
 ├─ miners/
 │  ├─ quasareum_arduino_ide/
-│  │  └─ miner/
-│  │     └─ miner.ino
+│  │  ├─ miner_arduino/
+│  │  │  └─ miner_arduino.ino
+│  │  │
+│  │  └─ miner_esp/
+│  │     └─ miner_esp.ino
 │  │
 │  └─ quasareum_python/
 │     └─ miner.py
@@ -33,9 +34,19 @@ quasareum-token/
 
 ### 🔹 Arduino Miner (Arduino IDE)
 
+You can use either the **Arduino** or **ESP** miner depending on your board.
+
+#### Arduino board
 1. Open **Arduino IDE** → File → Open → select  
-   `miners/quasareum_arduino_ide/miner/miner.ino`
+   `miners/quasareum_arduino_ide/miner_arduino/miner_arduino.ino`
 2. Select your board (Tools → Board) and port (Tools → Port).
+3. Click **Upload**.
+4. Open **Serial Monitor** (115200 baud).
+
+#### ESP board
+1. Open **Arduino IDE** → File → Open → select  
+   `miners/quasareum_arduino_ide/miner_esp/miner_esp.ino`
+2. Select your ESP board (e.g., ESP32/ESP8266) and port.
 3. Click **Upload**.
 4. Open **Serial Monitor** (115200 baud).
 
@@ -63,8 +74,8 @@ Last solutions:
 #### Windows PowerShell
 
 ```powershell
-git clone https://github.com/quasareum-token/quasareum-token.git
-cd quasareum-token\miners\quasareum_python
+git clone https://github.com/quasareum-token/quasareum-main.git
+cd quasareum-main\miners\quasareum_python
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -75,8 +86,8 @@ python .\miner.py 0xYourEthereumAddressHere
 #### macOS / Linux
 
 ```bash
-git clone https://github.com/quasareum-token/quasareum-token.git
-cd quasareum-token/miners/quasareum_python
+git clone https://github.com/quasareum-token/quasareum-main.git
+cd quasareum-main/miners/quasareum_python
 
 python3 -m venv .venv
 source .venv/bin/activate
