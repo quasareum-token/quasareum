@@ -16,7 +16,7 @@ quasareum-token/
 │  │  └─ miner/
 │  │     └─ miner.ino
 │  └─ quasareum_python/
-│     └─ main.py
+│     └─ miner.py
 └─ README.md
 ```
 
