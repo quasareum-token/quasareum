@@ -7,7 +7,7 @@ Quasareum is a project focused on accessible cryptocurrency mining. Its unique h
 ## Repository layout
 
 ```
-quasareum-main/
+quasareum/
 ├─ contracts/
 │  └─ quasareum_token.sol
 │
@@ -74,8 +74,8 @@ Last solutions:
 #### Windows PowerShell
 
 ```powershell
-git clone https://github.com/quasareum-token/quasareum-main.git
-cd quasareum-main\miners\quasareum_python
+git clone https://github.com/quasareum-token/quasareum.git
+cd quasareum\miners\quasareum_python
 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -86,8 +86,8 @@ python .\miner.py 0xYourEthereumAddressHere
 #### macOS / Linux
 
 ```bash
-git clone https://github.com/quasareum-token/quasareum-main.git
-cd quasareum-main/miners/quasareum_python
+git clone https://github.com/quasareum-token/quasareum.git
+cd quasareum/miners/quasareum_python
 
 python3 -m venv .venv
 source .venv/bin/activate
