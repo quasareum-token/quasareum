@@ -11,12 +11,19 @@ The token also features a fully on‑chain, built‑in market for decentralized 
 ```
 quasareum-token/
 ├─ contracts/
+│  └─ quasareum_token.sol
+│
 ├─ miners/
 │  ├─ quasareum_arduino_ide/
 │  │  └─ miner/
 │  │     └─ miner.ino
+│  │
 │  └─ quasareum_python/
 │     └─ miner.py
+│
+├─ whitepaper/
+│  └─ Quasareum.pdf
+│
 └─ README.md
 ```
 
